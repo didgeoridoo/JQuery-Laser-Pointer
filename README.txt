@@ -12,8 +12,6 @@ To use, include an HTML element with ID='laser'; this will be the origin of the 
 
 The CSS position of the #laser element must be set to 'absolute' for the beam to track properly.
 
-To limit where the laser tracks, change t
-
 License:
 This plugin is covered under the MIT License. You are free to modify, redistribute, and generally muck with it as you see fit.
 
