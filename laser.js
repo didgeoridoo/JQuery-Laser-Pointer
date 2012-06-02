@@ -40,8 +40,8 @@ jQuery(document).ready(function($) {
 	//	Detects where the origin of the laser is, allowing code to function
 	//	no matter where the origin is positioned on the page:
 	
-	var laserOriginY = $('#laser').offset().top
-	var laserOriginX = $('#laser').offset().left
+	var laserOriginY = $('#laser').offset().top;
+	var laserOriginX = $('#laser').offset().left;
 	
 	//	Following code fires on every mouse move (OFTEN).
 	//	To confine laser movement to a sub-section of the document,
@@ -51,27 +51,27 @@ jQuery(document).ready(function($) {
 		
 		//  Change opacity (i.e. make laser appear) during first mousemove:
 		
-		$('#laser').animate({opacity : 0.5},1000)
+		$('#laser').animate({opacity : 0.5},1000);
 		
 		//	Detect document width to allow trig math:
 		
-		var docWidth = $(document).width()
-		var docHeight = $(document).height()
+		var docWidth = $(document).width();
+		var docHeight = $(document).height();
 
 		
 		//	Basic trig math to determine transform angles
 		//	and hypotenuse scaling factor:
 		
-		var sideOppo = laserOriginY-event.pageY
-		var sideAdja = event.pageX-docWidth-laserOriginX
-		var sideHypo = Math.sqrt((sideOppo*sideOppo)+(sideAdja*sideAdja))
-		var laserTheta = -(Math.atan(sideOppo/sideAdja)/Math.PI)*180
-		var scaleX = sideHypo/docWidth
+		var sideOppo = laserOriginY-event.pageY;
+		var sideAdja = event.pageX-docWidth-laserOriginX;
+		var sideHypo = Math.sqrt((sideOppo*sideOppo)+(sideAdja*sideAdja));
+		var laserTheta = -(Math.atan(sideOppo/sideAdja)/Math.PI)*180;
+		var scaleX = sideHypo/docWidth;
 		
 		//	Apply all browser-specific transform factors:
 		
 		for(browser in xformBrowser){
-			$('#laser').css(xformBrowser[browser]+'-origin','100%').css(xformBrowser[browser],'rotate('+laserTheta+'deg) scaleX('+scaleX+')')
+			$('#laser').css(xformBrowser[browser]+'-origin','100%').css(xformBrowser[browser],'rotate('+laserTheta+'deg) scaleX('+scaleX+')');
 		}
 	});
 
