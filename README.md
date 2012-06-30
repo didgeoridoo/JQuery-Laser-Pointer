@@ -1,17 +1,27 @@
 jQuery Laser Pointer v0.1
 ====================
 
-Author: Geordie Kaytes
-Contact: geordie@kayt.es
-Last updated: 29 May, 2012
-Dependencies: Tested with jQuery 1.7.2
+<ul>
+<li>Author: Geordie Kaytes</li>
+<li>Contact: geordie@kayt.es</li>
+<li>Last updated: 29 May, 2012</li>
+<li>Dependencies: Tested with jQuery 1.7.2</li>
+</ul>
 
-Description:
-This small plugin causes a "laser" of user-defined thickness, opacity and color to follow the cursor around the browser screen.
+<h2>Description:</h2>
+<p>This small plugin causes a "laser" of user-defined thickness, opacity and color to follow the cursor around the browser screen.</p>
 
-To use, include an HTML element with ID='laser'; this will be the origin of the beam.
+<p>To use, include an HTML element with ID='laser'; this will be the origin of the beam.</p>
 
-The CSS position of the #laser element must be set to 'absolute' for the beam to track properly.
+<p>The CSS position of the #laser element must be set to 'absolute' for the beam to track properly.</p>
+
+<h2>FAQ:</h2>
+
+<h3>Q: Why?</h3>
+<p>A: Because it's fun, I don't know. Think of the possibilities!</p>
+
+<h3>Q: I notice you don't use it at all on your own site.</h3>
+<p>A: That's because it's tacky as all hell, wildly distracting, and... hey, that wasn't a question! Get out of my FAQ section.</p>
 
 License:
 This plugin is covered under the MIT License. You are free to modify, redistribute, and generally muck with it as you see fit.
