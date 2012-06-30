@@ -23,7 +23,7 @@ jQuery Laser Pointer v0.1
 <h3>Q: I notice you don't use it at all on your own site.</h3>
 <p>A: That's because it's tacky as all hell, wildly distracting, and... hey, that wasn't a question! Get out of my FAQ section.</p>
 
-<h3>License:</h3>
+<h2>License:</h2>
 <p>This plugin is covered under the MIT License. You are free to modify, redistribute, and generally muck with it as you see fit.
 
 Copyright (c) 2012 Geordie Kaytes
